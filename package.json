@@ -1,0 +1,11 @@
+{
+  "name": "web-miel",
+  "version": "1.0.0",
+  "description": "Web para Portfolio. La idea es la venta de productos artesanales, en este caso la miel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Omar Caruso",
+  "license": "ISC"
+}
