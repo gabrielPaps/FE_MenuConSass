@@ -14,33 +14,34 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
 nav .logo {
   display: inline-block;
   margin-right: 1em;
 }
-
 nav .logo img {
   vertical-align: top;
-  height: 22px;
+  height: 1.5em;
+  margin-right: 0.3em;
 }
-
+nav .logo:hover {
+  background: #4357ad;
+  cursor: pointer;
+}
+nav .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+}
 nav .btn-menu {
   display: none;
   color: #fff;
   text-decoration: none;
   font-size: 1em;
 }
-
-nav .logo:hover {
-  background: #4357ad;
-}
-
 nav .enlaces {
   display: inline-block;
   text-align: right;
 }
-
 nav .enlaces a {
   color: #fff;
   text-decoration: none;
@@ -49,14 +50,68 @@ nav .enlaces a {
   text-align: center;
   font-size: 1em;
 }
-
+nav .enlaces a:hover {
+  background: #f2f2f2;
+  color: #4357ad;
+}
 nav .enlaces i {
   margin-right: 5px;
 }
 
-nav .enlaces a:hover {
-  background: #f2f2f2;
-  color: #4357ad;
+.headroom {
+  transition: transform 0.3s ease;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
+@media screen and (max-width: 700px) {
+  header nav {
+    flex-direction: column;
+  }
+  header nav .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+  }
+  header nav .logo .btn-menu {
+    display: inline-block;
+  }
+  header nav .enlaces {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.75);
+}
+main article h1 {
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+main article hr {
+  margin-bottom: 1em;
+  height: 2px;
+  background: #4357ad;
+  border: none;
+}
+main article p {
+  margin-bottom: 1em;
 }
 
 body {

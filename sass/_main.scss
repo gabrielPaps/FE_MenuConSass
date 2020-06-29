@@ -1,0 +1,23 @@
+main{
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.75);
+  & article{
+      & h1{
+          font-weight: normal;
+          margin-bottom: .5em;
+      }
+      & hr{
+          margin-bottom: 1em;
+          height: 2px;
+          background: #4357ad;
+          border: none;
+      }
+      & p{
+          margin-bottom: 1em;
+      }
+  }
+}
